@@ -68,6 +68,7 @@ module.exports = {
           },
           alias: {
             map: [
+              ['@', './src'],
               ['', './public']  // <-- this line
             ],
             extensions: ['.js', '.jsx', '.ts', '.tsx']
@@ -94,7 +95,7 @@ module.exports = {
     'no-unused-vars': 'off',
     // 'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': [
-      'error',
+      'off',
       {
         devDependencies: true,
         // optionalDependencies: false,
