@@ -69,7 +69,7 @@ module.exports = {
           alias: {
             map: [
               ['@', './src'],
-              ['', './public']  // <-- this line
+              ['', './public']
             ],
             extensions: ['.js', '.jsx', '.ts', '.tsx']
           }
@@ -93,14 +93,10 @@ module.exports = {
   rules: {
     'max-len': ['off'],
     'no-unused-vars': 'off',
-    // 'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': [
       'off',
       {
         devDependencies: true,
-        // optionalDependencies: false,
-        // peerDependencies: false,
-        // packageDir: './',
       },
     ],
   },
