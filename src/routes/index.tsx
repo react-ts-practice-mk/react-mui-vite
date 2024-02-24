@@ -2,6 +2,8 @@ import { useState } from 'react';
 import reactLogo from '@/assets/react.svg';
 import viteLogo from '/vite.svg';
 import '@/App.css';
+import Button from '@mui/material/Button';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Button variant="contained">Material UI</Button>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
