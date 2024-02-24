@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Header from '@/components/organisms/Header'
 
 interface DefaultLayoutProps {
   children: ReactNode;
@@ -7,10 +8,7 @@ interface DefaultLayoutProps {
 const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <div>
-      <header>
-        {/* ヘッダーのコンテンツ */}
-        <h1>Default Header</h1>
-      </header>
+      <Header />
       <main>
         {/* ページコンポーネント */}
         {children}

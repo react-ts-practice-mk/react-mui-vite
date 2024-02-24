@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from '@/routes/index';
-// import '@/index.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { renderRoutes } from 'react-router-config';
 import routes from '@/router';
+import CssBaseline from '@mui/material/CssBaseline'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <CssBaseline />
     <Router>
       <Routes>
         {routes.map((route, index) => (

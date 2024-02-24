@@ -23,7 +23,7 @@ module.exports = {
   // Base config
   extends: [
     'eslint:recommended',
-    // 'airbnb-base',
+    'airbnb-base',
   ],
 
   overrides: [
