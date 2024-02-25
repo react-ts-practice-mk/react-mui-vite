@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import reactLogo from '@/assets/react.svg';
+// eslint-disable-next-line import/no-absolute-path
 import viteLogo from '/vite.svg';
 import Button from '@mui/material/Button';
 
-
 function App() {
-  const [count, setCount] = useState(0);
+  const [clickCount, setClickCount] = useState(0);
 
   return (
     <>
@@ -20,8 +20,8 @@ function App() {
       <h1>Vite + React</h1>
       <Button variant="contained">Material UI</Button>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => setClickCount((count) => count + 1)}>
+          count is {clickCount}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR

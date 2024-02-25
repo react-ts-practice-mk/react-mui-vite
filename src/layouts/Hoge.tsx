@@ -4,8 +4,7 @@ interface HogeLayoutProps {
   children: ReactNode;
 }
 
-const HogeLayout = ({ children }: HogeLayoutProps) => {
-  return (
+const HogeLayout = ({ children }: HogeLayoutProps) => (
     <div>
       <header>
         {/* ヘッダーのコンテンツ */}
@@ -20,7 +19,6 @@ const HogeLayout = ({ children }: HogeLayoutProps) => {
         <h1>Hoge Footer</h1>
       </footer>
     </div>
-  );
-}
+);
 
 export default HogeLayout;

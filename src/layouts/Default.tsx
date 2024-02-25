@@ -1,12 +1,11 @@
 import { ReactNode } from 'react';
-import Header from '@/components/organisms/Header'
+import Header from '@/components/organisms/Header.tsx';
 
 interface DefaultLayoutProps {
   children: ReactNode;
 }
 
-const DefaultLayout = ({ children }: DefaultLayoutProps) => {
-  return (
+const DefaultLayout = ({ children }: DefaultLayoutProps) => (
     <div>
       <Header />
       <main>
@@ -18,7 +17,6 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
         <h1>Default Footer</h1>
       </footer>
     </div>
-  );
-}
+);
 
 export default DefaultLayout;

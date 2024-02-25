@@ -1,4 +1,4 @@
-//import { useState } from 'react';
+// import { useState } from 'react';
 // import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 // import List from '@mui/material/List';
@@ -9,8 +9,7 @@ import Drawer from '@mui/material/Drawer';
 // import ListItemText from '@mui/material/ListItemText';
 // import InboxIcon from '@mui/icons-material/MoveToInbox';
 // import MailIcon from '@mui/icons-material/Mail';
-import SidebarList from '@/components/molecules/SidebarList'
-
+import SidebarList from '@/components/molecules/SidebarList.tsx';
 
 interface SidebarProps {
   open: boolean
@@ -22,8 +21,8 @@ export default function Sidebar({ open, emitsHandleSidebarOpen }: SidebarProps) 
 
   const toggleSidebar = (newOpen: boolean) => () => {
     // open = newOpen
-    emitsHandleSidebarOpen(newOpen)
-    console.log('open value: ',open)
+    emitsHandleSidebarOpen(newOpen);
+    console.log('open value: ', open);
   };
 
   const DrawerList = (

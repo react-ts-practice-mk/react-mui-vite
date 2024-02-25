@@ -69,10 +69,10 @@ module.exports = {
           alias: {
             map: [
               ['@', './src'],
-              ['', './public']
+              ['', './public'],
             ],
-            extensions: ['.js', '.jsx', '.ts', '.tsx']
-          }
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          },
         },
       },
       extends: [

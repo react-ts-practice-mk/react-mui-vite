@@ -1,28 +1,28 @@
-import Home  from '@/routes/index'
-import About from '@/routes/About';
-import Contact from '@/routes/Contact';
-import DefaultLayout from '@/layouts/Default';
-import HogeLayout from '@/layouts/Hoge';
+import Home from '@/routes/index.tsx';
+import About from '@/routes/About.tsx';
+import Contact from '@/routes/Contact.tsx';
+import DefaultLayout from '@/layouts/Default.tsx';
+import HogeLayout from '@/layouts/Hoge.tsx';
 
 const routes = [
   {
     path: '/',
     exact: true,
     component: Home,
-    layout: DefaultLayout
+    layout: DefaultLayout,
   },
   {
     path: '/about',
     exact: true,
     component: About,
-    layout: HogeLayout
+    layout: HogeLayout,
   },
   {
     path: '/contact',
     exact: true,
     component: Contact,
-    layout: DefaultLayout
-  }
+    layout: DefaultLayout,
+  },
 ];
 
 export default routes;

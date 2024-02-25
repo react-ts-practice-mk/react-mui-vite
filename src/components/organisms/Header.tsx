@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -15,7 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import Sidebar from '@/components/organisms/Sidebar';
+import Sidebar from '@/components/organisms/Sidebar.tsx';
 
 // ここからstyle
 const Search = styled('div')(({ theme }) => ({
@@ -85,12 +85,11 @@ export default function Header() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-
   const handleSidebarOpen = (flag: boolean) => {
     setSidebarOpen(flag);
   };
 
-  const menuId = 'primary-search-account-menu';
+  const menuId = 'search-account-menu';
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
@@ -112,7 +111,7 @@ export default function Header() {
     </Menu>
   );
 
-  const mobileMenuId = 'primary-search-account-menu-mobile';
+  const mobileMenuId = 'search-account-menu-mobile';
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
@@ -167,7 +166,7 @@ export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Sidebar open={sidebarOpen} emitsHandleSidebarOpen={handleSidebarOpen} />
-      <AppBar position="static">
+      <AppBar position="static" color="white">
         <Toolbar>
           <IconButton
             size="large"
